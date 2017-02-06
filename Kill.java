@@ -1,5 +1,5 @@
 package tp;
-
+//ssssssssssssssssss
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,9 +9,9 @@ public class Kill {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 //		int z = 0; 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("ÀÎ¿ø : ");
+		System.out.print("ì¸ì› : ");
 		int position = Integer.parseInt(br.readLine());
-		System.out.print("°£°İ : ");
+		System.out.print("ê°„ê²© : ");
 		int kan = Integer.parseInt(br.readLine());
 		
 		int [] human = new int [position];
@@ -24,7 +24,7 @@ public class Kill {
 		int arriveNumber = position;
 		do{
 			int ntemp = 0;
-			//Á×¿©
+			//ì£½ì—¬
 			if(arriveNumber+nam>=kan){
 				for(int i = 0; i<arriveNumber; i++){
 					if((i+nam+1)%kan==0){
@@ -58,14 +58,14 @@ public class Kill {
 				
 				
 			
-			//È®ÀÎ
+			//í™•ì¸
 			for (int i = 0; i < human.length; i++) {
 				System.out.println("human[" + i + "] = " + human[i]);
 			}
 			System.out.println("nam = " + nam);
 			System.out.println("------------=-------------");
 			
-			//»ê»ç¶÷À¸·Î ÃÊ±âÈ­
+			//ì‚°ì‚¬ëŒìœ¼ë¡œ ì´ˆê¸°í™”
 //			if(arriveNumber>kan){
 //				nam = (arriveNumber+nam)%kan;
 //			}else{
@@ -97,14 +97,14 @@ public class Kill {
 				human[i] = 0;
 			}
 			
-			//È®ÀÎ
+			//í™•ì¸
 			for (int i = 0; i < human.length; i++) {
 				System.out.println("human[" + i + "] = " + human[i]);
 			}
 			System.out.println("nam = " + nam);
 			System.out.println("arriveNumber = " + arriveNumber);
 			
-			//»ê»ç¶÷ °Ë»ç
+			//ì‚°ì‚¬ëŒ ê²€ì‚¬
 			if(human[1]==0){
 				arrive = human[0];
 				break;
@@ -115,7 +115,7 @@ public class Kill {
 			
 		}while(true);
 		
-		System.out.println("»ê³ğ : " + arrive);
+		System.out.println("ì‚°ë†ˆ : " + arrive);
 		
 	}
 
